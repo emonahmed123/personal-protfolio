@@ -18,7 +18,7 @@ neutral: "#3D4451",
         
 "base-100": "#FFFFFF",
         
-info: "#fef9c3",
+info: "#ecf0f3",
         
 success: "#fecdd3",
         

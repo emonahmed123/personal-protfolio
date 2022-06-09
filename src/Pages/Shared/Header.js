@@ -1,12 +1,12 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const Header = () => {
     
    
    const menuItems =<>
-          <li><Link to='/home'>Home</Link></li>
-          <li> <Link to='/project'>Project</Link></li>
+          <li><NavLink  to='/home'>Home</NavLink></li>
+          <li> <NavLink to='/project'>Project</NavLink></li>
           <li> <Link to='/contact'>Contact</Link></li>
           <li> <Link to='/about'>About</Link></li>
      </>
@@ -24,7 +24,7 @@ const Header = () => {
        }
         </ul>
       </div>
-      <a className="btn btn-ghost normal-case text-xl mx-auto">Web Developer</a>
+      <a className="btn btn-ghost normal-case text-xl mx-auto">EMON AHMED</a>
     </div>
     <div className="navbar-center hidden lg:flex">
       <ul className="menu menu-horizontal  p-0">

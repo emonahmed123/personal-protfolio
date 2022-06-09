@@ -30,7 +30,7 @@ const Skill = () => {
      id:4 ,
      name: "Nodejs",
      img:nodejsicon ,
-     dig:"Most Popular language"
+     dig:"Most Popular Backend js run time"
  }
 
 
@@ -48,7 +48,7 @@ const Skill = () => {
          {  
          SKills.map(skill=> <div skill={skill} key={skill.id} >
 
- <div class="card w-44 h-56 bg-secondary shadow-xl text-white">
+ <div class="  hover:animate-bounce card w-44 h-60 bg-secondary shadow-xl text-white">
        <img  className='w-24' src={skill.img}alt="" />
   <div class="card-body">
      <h2 class="card-title">{skill.name}</h2>
