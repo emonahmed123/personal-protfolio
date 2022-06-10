@@ -6,13 +6,13 @@ const Header = () => {
    
    const menuItems =<>
           <li><NavLink  to='/home'>Home</NavLink></li>
-          <li> <NavLink to='/project'>Project</NavLink></li>
-          <li> <Link to='/contact'>Contact</Link></li>
+          <li> <a href='#projects'>Project </a></li>
+          <li> <a href='#contact'>Contact</a></li>
           <li> <Link to='/about'>About</Link></li>
      </>
       return (
         <>
-  <div className="navbar text-dark">
+  <div className="navbar text-dark shadow">
     <div className="navbar-start ">
       <div className="dropdown">
         <label tabIndex="0" className="btn btn-ghost lg:hidden">

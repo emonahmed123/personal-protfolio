@@ -4,7 +4,7 @@ import Map from './Map/Map';
 
 const Contact = () => {
     return (
-        <div className='px-5 py-24 mx-auto flex sm:flex-nowrap flex-wrap gap-4'>
+        <div className='px-5 py-24 mx-auto flex sm:flex-nowrap flex-wrap gap-4'id='contact' >
             <Map></Map>
            <Input></Input>
         </div>

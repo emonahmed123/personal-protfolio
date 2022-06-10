@@ -1,11 +1,14 @@
 import React from 'react';
 import { FaGithub } from 'react-icons/fa';
-
+// import { motion } from 'framer-motion';
+import screenshotmanu from "../../Images/screenshot/Screenshot.png"
+import screenshotwhare from "../../Images/screenshot/wharehouse.png"
+import screenshotphoto from "../../Images/screenshot/photograpy.png"
 const Projects = () => {
     const Projects = [{
         id: 1,
         name: " Car-parts-maunfactureing",
-        img: "",
+        img:screenshotmanu,
         dis: "This is maunfactureing website fully responsive. A non-sign upped user gets to see the basics of our site and need Login To do more activities.",
         live: "https://car-parts-manufacturer-8d75b.web.app/",
         server: "https://github.com/emonahmed123/car-manufacture-server-side",
@@ -14,7 +17,7 @@ const Projects = () => {
     {
         id: 2,
         name: " Bike Warehouse management",
-        img: "",
+        img:screenshotwhare,
         dis: "This is a basic warehouse management site and fully responsive.Anyone can update stock or get items upon signup/sign in",
         live: "https://warehouse-82822.firebaseapp.com/",
         server: "https://github.com/emonahmed123/wharehouse-mangement-sever",
@@ -22,7 +25,7 @@ const Projects = () => {
     }, {
         id: 3,
         name: "Wedding Photograper",
-        img: "",
+        img:screenshotphoto, 
         dis: "This site is a Wedding photographer portfolio and fully responseve.Any user can hire different types of photography services from here",
         live: "https://photographer-436e3.web.app/",
         clinet: "https://github.com/emonahmed123/-independent-service-provider"
@@ -31,8 +34,11 @@ const Projects = () => {
     ]
 
     return (
-        <div >
-            <div className='mt-20' >
+ 
+   
+
+   <div >
+            <div className='mt-20'id="projects" >
                  <div className='mx-24  shadow-xl bg-yellow-400 rounded'>
                  <h1 className='text-center text-3xl '>My Projects </h1>
 
@@ -44,7 +50,7 @@ const Projects = () => {
 
 
                             <div className="  card card-compact w-full bg-base-100 shadow-xl">
-                                <figure><img className=' hover:translate-y-6 ' src="https://api.lorem.space/image/shoes?w=400&h=225" alt="Shoes" /></figure>
+                                <figure><img className=' hover:translate-y-6 ' src={project.img} alt="Shoes" /></figure>
                                 <div className="card-body h-56 ">
                                     <h2 className="card-title">{project.name}</h2>
                                     <p>{project.dis}</p>
@@ -64,15 +70,14 @@ const Projects = () => {
                         </div>)
                     }
 
-
-
-
                 </div>
 
 
             </div>
 
         </div>
+
+      
     );
 };
 
