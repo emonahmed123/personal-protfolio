@@ -34,22 +34,22 @@ const Projects = () => {
         <div >
             <div className='mt-20' >
                  <div className='mx-24  shadow-xl bg-yellow-400 rounded'>
-                 <h1 className='text-center text-3xl '>Projects </h1>
+                 <h1 className='text-center text-3xl '>My Projects </h1>
 
                  </div>
 
                 <div className=' grid sm:grid-col-1 md:grid-cols-2 lg:grid-cols-3 px-12 gap-3 pt-4 mt-3' >
                     {
-                        Projects.map(project => <div project={project}>
+                        Projects.map(project => <div key={project.id} project={project}>
 
 
-                            <div class="  card card-compact w-full bg-base-100 shadow-xl">
+                            <div className="  card card-compact w-full bg-base-100 shadow-xl">
                                 <figure><img className=' hover:translate-y-6 ' src="https://api.lorem.space/image/shoes?w=400&h=225" alt="Shoes" /></figure>
-                                <div class="card-body h-56 ">
-                                    <h2 class="card-title">{project.name}</h2>
+                                <div className="card-body h-56 ">
+                                    <h2 className="card-title">{project.name}</h2>
                                     <p>{project.dis}</p>
                             
-                                    <div class="card-actions justify">
+                                    <div className="card-actions justify">
                                         <a  href={project.live} target={"_blank"}   class="btn text-secondary  bg-white shadow hover:bg-stone-900 hover:text-white dark:bg-gray-700">Live Site</a>
                                         <a href={project.client} class="btn text-secondary  bg-white shadow hover:bg-stone-900 hover:text-white dark:bg-gray-700 "> <FaGithub/> Client Code</a>
                                       {
