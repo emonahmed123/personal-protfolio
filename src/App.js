@@ -3,17 +3,22 @@ import Home from './Pages/Home/Home';
 import { Route,  Routes,} from 'react-router-dom';
 import Header from './Pages/Shared/Header';
 import Footer from './Pages/Shared/Footer';
+import ProjectsDeatil from './Pages/Projects/ProjectsDeatil';
+import Blog from './Pages/Blog/Blog';
+import AboutMe from './Pages/Home/AboutMe/AboutMe';
 
 
 function App() {
   return (
-    <div>
+    <div className='scroll-smooth' >
          <Header></Header>
       
       <Routes>
         <Route path='/'element={<Home></Home>} ></Route>
         <Route path='/home'element={<Home></Home>} ></Route>
-
+        <Route path='/project/:id'element={<ProjectsDeatil></ProjectsDeatil>} ></Route>
+         <Route path='/bolg'  element={<Blog></Blog>}></Route>
+         <Route path='/about' element={<AboutMe></AboutMe>}></Route>
       </Routes>
      <Footer></Footer>
     </div>

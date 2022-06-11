@@ -7,7 +7,7 @@ const Footer = () => {
         <div>
             <footer class="footer footer-center p-10 bg-base-200 text-base-content rounded">
   <div class="grid grid-flow-col gap-4">
-    <a class="link link-hover">FaceBook</a> 
+    <a class="link link-hover">Facebook</a> 
     <a class="link link-hover">Linkedin</a> 
     <a class="link link-hover">Github</a>
   </div> 

@@ -13,7 +13,8 @@ const Protfoilo = () => {
                     initial={{ opacity: 0, x: -50, scale: 0.9 }}
                     animate={{ opacity: 1, x: 0, scale: 1 }}
                     transition={{ duration: 1, ease: "easeInOut" }}
-                    className='max-w-2xl'>
+                    // className='max-w-2xl'
+                    >
       <h1 class="text-5xl font-bold">Hello,  I am Emon Ahmed  </h1>
       <h2 class="py-6 text-3xl ">
       <span className='font-semibold text-secondary'>

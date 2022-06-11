@@ -1,6 +1,5 @@
 import React from "react";
-import { Link, NavLink } from "react-router-dom";
-
+import { Link, NavLink,} from "react-router-dom";
 const Header = () => {
     
    
@@ -8,7 +7,8 @@ const Header = () => {
           <li><NavLink  to='/home'>Home</NavLink></li>
           <li> <a href='#projects'>Project </a></li>
           <li> <a href='#contact'>Contact</a></li>
-          <li> <Link to='/about'>About</Link></li>
+          <li> <a href='#about'>About</a></li>
+          <li> <Link to='/bolg'> Blog </Link></li> 
      </>
       return (
         <>
