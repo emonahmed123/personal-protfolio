@@ -10,27 +10,27 @@ const Skill = () => {
    id:1,
    name:"JavaScript",
    img:javascripticon,
-   dig:"Most popular Programing Language"
+
 
 },
   {
       id:2,
       name:"React ",
       img:reactscripticon,
-      dig:"Most popular Javascript"
+  
 },
   {
       id:3,
       name:"MongDB",
       img:Mongodbicon ,
-      dig:"Most popular Database"
+     
 },
 
  {
      id:4 ,
      name: "Nodejs",
      img:nodejsicon ,
-     dig:"Most Popular Backend js run time"
+     
  }
 
 
@@ -58,11 +58,10 @@ const Skill = () => {
             whileTap={{ scale: 1.05 }}
           >
 
-   <div class="  card w-44 h-60 bg-secondary shadow-xl text-white">
+   <div class="  card w-44 h-48 bg-secondary shadow-xl text-white">
        <img  className='w-24' src={skill.img}alt="" />
   <div class="card-body">
      <h2 class="card-title">{skill.name}</h2>
-     <p>{skill.dig}</p>
      <div class="card-actions justify-end">
     </div>
   </div>

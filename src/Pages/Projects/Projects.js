@@ -12,13 +12,14 @@ const Projects = () => {
    
     return(
         <motion.div
-        id='services'
+       
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, ease: 'easeInOut' }}
         className="mt-28"
+        id="projects"
     >
-            <div className='mt-20'id="projects" >
+            <div className='mt-20' >
                  <div className='mx-24  shadow-xl bg-yellow-400 rounded'>
                  <h1 className='text-center text-3xl '>My Projects </h1>
 
