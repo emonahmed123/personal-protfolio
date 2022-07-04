@@ -3,9 +3,13 @@ import { motion } from "framer-motion"
 import bg from '../../../Images/portfoilo/my-bg2.png'
 import TypewriterComponent from 'typewriter-effect';
 const Protfoilo = () => {
+ 
+
+  
     return ( 
        
     <div>
+       
            <div class="hero h-full lg:h-[60vh] shadow-2xl  mt-16 z-0 ">
   <div class="hero-content flex-col lg:flex-row">
   <div >
@@ -15,12 +19,12 @@ const Protfoilo = () => {
                     transition={{ duration: 1, ease: "easeInOut" }}
                     // className='max-w-2xl'
                     >
-      <h1 class="text-5xl font-bold">Hello,  I am Emon Ahmed  </h1>
+      <h1 class="text-5xl font-bold">HELLO, I AM  <span className='text-primary'>  EMON  AHMED</span>   </h1>
       <h2 class="py-6 text-3xl ">
       <span className='font-semibold text-secondary'>
                             <TypewriterComponent
                                 options={{
-                                    strings: ['Junior Webdeveloper'],
+                                    strings: ['JUNIOR WEBDEVELOPER',],
                                     deleteSpeed: 50,
                                     pauseFor: 500,
                                     autoStart: true,
@@ -40,8 +44,11 @@ const Protfoilo = () => {
                     animate={{ opacity: 1, x: 0, scale: 1 }}
                     transition={{ duration: 1, ease: "easeInOut" }}
                     className='mask mask-hexagon max-w-sm mb-12 lg:mb-0'
-                >
-                        <img src={bg} class="h-full" alt='' />
+                >    
+                            <img src={bg} class="h-full w-full " alt='' />
+                     
+
+                     
                 </motion.div>
     
 

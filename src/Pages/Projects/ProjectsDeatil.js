@@ -1,7 +1,6 @@
-
- import React,{ useEffect, useState } from "react";
+import React,{ useEffect, useState } from "react";
 import {useParams } from "react-router-dom";
-
+import './ProjectsDeatil.css'
 const ProjectsDeatil = () =>{;
   const {id} = useParams();
   const [projects, setProject] = useState([]);
@@ -17,7 +16,7 @@ const ProjectsDeatil = () =>{;
       });
   }, [id]);
        
-      const projectdata = projects.filter(project=> project.id == id )
+      const projectdata = projects.filter(project=> project.id ==id )
       console.log(projectdata)
 
     
@@ -26,24 +25,31 @@ const ProjectsDeatil = () =>{;
   
  
         <div>
-
-  <div class="card w-50 mt-20 mb-20 mx-auto">
-    <div className='flex mx-auto mt-10 rounded' >
-    <figure><img className="w-48" src={projectdata[0]?.img}alt="car!"/></figure>
-    <figure><img  className="w-48"  src={projectdata[0]?.imgthere}alt="car!"/></figure>
-    <figure><img  className="w-48" src={projectdata[0]?.imgtwo} alt="car!"/></figure>
-    </div>
+  <div className="grid grid-cols-1 lg:grid-cols-3 gap-2">
+  <div class="Card">
+    
+     <img className="Img"  src={projectdata[0]?.img} alt="" />
+  
   
 </div>
+  <div className="Card">
+     <img className="Img"  src={projectdata[0]?.imgtwo} alt="" />
+</div >
+  <div className="Card ">
+  
+     <img className="Img" src={projectdata[0]?.imgthere} alt="" />
+    
+  </div>
+</div>
 
-<div class="card w-96 mx-auto bg-base-100 shadow-xl mb-16">
-  <figure class="px-10 pt-10">
+<div className="card w-96 mx-auto bg-base-100 shadow-xl mt-16 mb-16">
+  <figure className="px-10 pt-10">
   
   </figure>
-  <div class="card-body items-center text-center">
-    <h2 class="card-title">{projectdata[0]?.name}</h2>
+  <div className="card-body items-center text-center">
+    <h2 className="card-title">{projectdata[0]?.name}</h2>
     <p className="text-bold" ><span className="text-xl" >Feature:</span>{projectdata[0]?.more}</p>
-    <p className="text-bold" ><span className="text-xl" >Tecnologe:</span>{projectdata[0]?.Tecnologe}</p>
+    <p className="text-bold" ><span className="text-xl">Tecnologe:</span>{projectdata[0]?.Tecnologe}</p>
      
   </div>
 </div>

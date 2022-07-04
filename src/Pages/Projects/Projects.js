@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Project from './Project';
 import { motion } from 'framer-motion';
 const Projects = () => {
- const [projects,setProjects]=useState([]);
+const [projects,setProjects]=useState([]);
 
  useEffect(()=>{
            fetch("/Serevice.json")
@@ -20,12 +20,15 @@ const Projects = () => {
         id="projects"
     >
             <div className='mt-20' >
-                 <div className='mx-24  shadow-xl bg-yellow-400 rounded'>
-                 <h1 className='text-center text-3xl '>My Projects </h1>
-
+                 <div className='mx-24  shadow-xl  bg-accent rounded'>
+                 <div class="flex flex-col w-full border-opacity-50">
+ 
+               <div class="divider  text-3xl">My Projects</div>
+ 
+             </div>
                  </div>
 
-                <div className=' grid sm:grid-col-1 md:grid-cols-2 lg:grid-cols-3 px-12 gap-5 pt-4 mt-3' >
+                <div className='grid sm:grid-col-1 md:grid-cols-2 lg:grid-cols-3 px-12 gap-5 pt-4 mt-3' >
                     {
                      projects.map(project => <Project key={project.id} project={project}></Project>)
                     }

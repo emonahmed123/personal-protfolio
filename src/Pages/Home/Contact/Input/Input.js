@@ -61,7 +61,7 @@ const Input = () => {
               name='message'
             ></textarea>                
 
-            <input className='w-full max-w-md btn-secondary py-5 rounded' type="submit" value='Submit' />
+            <input className='w-full max-w-md btn-primary py-5 rounded text-' type="submit" value='Submit' />
 
 
             </form>

@@ -10,7 +10,7 @@ import Blog from './Pages/Blog/Blog';
 
 function App() {
   return (
-    <div className='scroll-smooth'>
+    <div className='scroll-smooth App'>
          <Header></Header>
       
       <Routes>

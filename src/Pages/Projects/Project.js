@@ -23,10 +23,10 @@ const Project = ({project}) => {
                                     <button onClick={()=>handleNavigate(id)} >More Details</button>
                                     <div className="card-actions justify">
                                     
-                                        <a  href={live} target={"_blank"}   class="btn text-secondary  bg-white shadow hover:bg-stone-900 hover:text-white dark:bg-gray-700">Live Site</a>
-                                        <a href={client} class="btn text-secondary  bg-white shadow hover:bg-stone-900 hover:text-white dark:bg-gray-700 "> <FaGithub/> Client Code</a>
+                                        <a href={live} target={"_blank"}   class="btn text-secondary  bg-white shadow hover:bg-stone-900 hover:text-white dark:bg-gray-700">Live Site</a>
+                                        <a href={client} target={"_blank"} class="btn text-secondary  bg-white shadow hover:bg-stone-900 hover:text-white dark:bg-gray-700 "> <FaGithub/> Client Code</a>
                                       {
-                                        project.server&& <a  href={server} class="btn text-secondary  bg-white shadow hover:bg-stone-900 hover:text-white dark:bg-gray-700">Server Code</a>  
+                                        project.server&& <a  href={server} target={"_blank"}   class="btn text-secondary  bg-white shadow hover:bg-stone-900 hover:text-white dark:bg-gray-700">Server Code</a>  
                                       }
                                       
                                     </div>
