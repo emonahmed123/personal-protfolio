@@ -6,17 +6,23 @@ import Contact from './Contact/Contact';
 import Protfoilo from './Portfoilo/Protfoilo';
 import Postion from './Postion';
 import Service from './Services/Services'
+
+
 const Home = () => {
-    return (
+
+  return (
         <div>
-     <Protfoilo></Protfoilo>
+  
+       <Protfoilo></Protfoilo>
        <Skill></Skill>
-       
        <Service></Service>
        <Projects></Projects>
        <Contact></Contact>
         <AboutMe></AboutMe>
         <Postion></Postion>
+     
+
+
 
         </div>
     );

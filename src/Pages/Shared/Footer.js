@@ -1,5 +1,5 @@
 import React from 'react';
-import'./Footer.css'
+
 const Footer = () => {
     const currentYear = new Date().getFullYear();
    
@@ -18,7 +18,7 @@ const Footer = () => {
               target="_blank"
               rel="noreferrer"
             >
-              <div className="action-box">
+              <div className="btn_shadow">
                 {" "}
                 <i className="fa-brands fa-github"></i>
               </div>
@@ -28,7 +28,7 @@ const Footer = () => {
               target="_blank"
               rel="noreferrer"
             >
-              <div className="action-box">
+              <div className="btn_shadow">
                 {" "}
                 <i className="fa-brands fa-linkedin-in"></i>
               </div>
@@ -38,7 +38,7 @@ const Footer = () => {
               target="_blank"
               rel="noreferrer"
             >
-              <div className="action-box">
+              <div className="btn_shadow">
                 {" "}
                 <i className="fa-brands fa-facebook-f"></i>
               </div>

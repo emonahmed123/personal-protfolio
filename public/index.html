@@ -9,6 +9,7 @@
       name="description"
       content="Web site created using create-react-app"
     />
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.20.0/dist/full.css" rel="stylesheet" type="text/css" />
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
     <!--
       manifest.json provides metadata used when your web app is installed on a
@@ -28,6 +29,27 @@
     src="https://kit.fontawesome.com/78a2c54303.js"
     crossorigin="anonymous"
   ></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: "#212428",
+          secondary: "#0097e9",
+          accent: "#c4cfde",
+          neutral: "#ff014f",
+          "base-100": "#ffffff",
+          }
+        },
+      }
+
+   
+    }
+  </script>
+
+
 
   <!-- google font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">

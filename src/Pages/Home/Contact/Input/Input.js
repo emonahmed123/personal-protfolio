@@ -1,6 +1,8 @@
 import React from 'react';
 import emailjs from 'emailjs-com';
-import { motion } from 'framer-motion';
+import contactdark from "../../../../Images/map/contactdark.png"
+// import { motion } from 'framer-motion';
+import './input.css'
 const Input = () => {
     
     const sendEmail=(e)=>{
@@ -20,22 +22,45 @@ const Input = () => {
     
     return (
       // sm:w-1/2  flex flex-col md:ml-auto w-full  mt-8 md:mt-0 
-      <motion.div
-      initial={{ opacity: 0, y: 50 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 1, ease: 'easeInOut' }}
-    //  className="hero mb-32"
-     >
-        <div className=" dark:shadow-gray-700 shadow-md pb-2 rounded-lg bg-zinc-50 dark:bg-gray-800 ">
-       
-          <div className='text-center mb-14'>
-    
-            <h1 className='text-4xl text-primary '>Contact Me</h1>
+    //   <motion.div
+    //   initial={{ opacity: 0, y: 50 }}
+    //   whileInView={{ opacity: 1, y: 0 }}
+    //   transition={{ duration: 1, ease: 'easeInOut' }}
+    // //  className="hero mb-32"
+    //  >
+         <section className='Contact' id='contact'>
+        <div className='container top'>
+          <div className='heading text-center'>
+            <h4>CONTACT</h4>
+            <h1>Contact <span className=' text-neutral'>With Me</span> </h1>
           </div>
-          <div>
-           
-            <form onSubmit={sendEmail}  className='grid grid-cols-1 justify-items-center gap-5'>
-            
+
+          <div className='content d_flex'>
+            <div className='left'>
+              <div className='box box_shodow'>
+                <div className='img'>
+                   <img src={contactdark } alt='' /> 
+                </div>
+                <div className='details'>
+                    
+                  <div className='button f_flex'>
+                    <button className='btn_shadow'>
+                      <i className='fab fa-facebook-f'></i>
+                    </button>
+                    <button className='btn_shadow'>
+                      <i className='fab fa-instagram'></i>
+                    </button>
+                    <button className='btn_shadow'>
+                      <i className='fab fa-twitter'></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className='right box_shodow'>
+              <form onSubmit={sendEmail}>
+             
             <input
               type='text'
               placeholder='Name'
@@ -47,6 +72,7 @@ const Input = () => {
               placeholder='Email'
               className='input w-full max-w-md bg-white'
               name='email'
+              required
             />
             <input
               type='text'
@@ -55,21 +81,21 @@ const Input = () => {
               name='subject'
             />
             <textarea
-              className='textarea w-full max-w-md bg-white'
+              className='textarea w-full max-w-md mt-2 bg-white'
               placeholder='Your message'
               rows={6}
               name='message'
             ></textarea>                
 
-            <input className='w-full max-w-md btn-primary py-5 rounded text-' type="submit" value='Submit' />
+            <input className='w-full max-w-md  btn_shadow rounded text-'  type="submit" value='Submit' />
 
-
-            </form>
-           
+              </form>
+            </div>
           </div>
-          
         </div>
-    </motion.div>
+      </section>
+    
+    // </motion.div>
 
     );
  };
