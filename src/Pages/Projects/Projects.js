@@ -19,7 +19,7 @@ const Projects = () => {
         //     className="mt-28"
         //     id="projects"
         // >
-        <div className='mt-20   ' >
+        <div className='mt-20   'id='projects' >
             <div className='font-bold text-center rounded'>
 
 

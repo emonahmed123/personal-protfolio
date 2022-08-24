@@ -1,6 +1,6 @@
 .service-card {
    height: 270px;  
-  cursor: pointer;
+   cursor: pointer;
     display: flex;
     position: relative;
     bottom: 0px;
@@ -10,7 +10,7 @@
     z-index: 1;
     border-radius: 12px;
     background: linear-gradient(145deg, #e2e8ec, #ffffff);
-  box-shadow: 4px 4px 8px #cbcbcb, -4px -4px 8px #ffffff;
+    box-shadow: 4px 4px 8px #cbcbcb, -4px -4px 8px #ffffff;
     transition: bottom 0.3s ease-in-out;
   }
   .service-card::after {

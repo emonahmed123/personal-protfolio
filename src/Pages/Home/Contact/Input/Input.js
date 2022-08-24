@@ -1,7 +1,7 @@
 import React from 'react';
 import emailjs from 'emailjs-com';
 import contactdark from "../../../../Images/map/contactdark.png"
-// import { motion } from 'framer-motion';
+// import { motion } from "framer-motion"
 import './input.css'
 const Input = () => {
     
@@ -22,14 +22,14 @@ const Input = () => {
     
     return (
       // sm:w-1/2  flex flex-col md:ml-auto w-full  mt-8 md:mt-0 
-    //   <motion.div
-    //   initial={{ opacity: 0, y: 50 }}
-    //   whileInView={{ opacity: 1, y: 0 }}
-    //   transition={{ duration: 1, ease: 'easeInOut' }}
-    // //  className="hero mb-32"
-    //  >
+      //<motion.div
+     // initial={{ opacity: 0, y: 50 }}
+     // whileInView={{ opacity: 1, y: 0 }}
+     // transition={{ duration: 1, ease: 'easeInOut' }}
+    //  className="hero mb-32"
+     //>
          <section className='Contact' id='contact'>
-        <div className='container top'>
+        <div className='container top' >
           <div className='heading text-center'>
             <h4>CONTACT</h4>
             <h1>Contact <span className=' text-neutral'>With Me</span> </h1>
@@ -95,7 +95,7 @@ const Input = () => {
         </div>
       </section>
     
-    // </motion.div>
+      //</motion.div> 
 
     );
  };

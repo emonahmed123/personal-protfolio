@@ -7,7 +7,7 @@ const Header = () => {
     
    
    const menuItems =<>
-          <li><NavLink  to='/home'>Home</NavLink></li>
+          <li><NavLink className='bg-neutral ' to='/home'>Home</NavLink></li>
           <li><Link smooth to='/home#projects'>Project </Link></li>
           <li><Link smooth to ='/home#contact'>Contact</Link></li>
           <li><Link smooth to='/home#about' >About</Link></li>
@@ -15,7 +15,7 @@ const Header = () => {
      </> 
       return (
         <>
-  <div className="navbar text-dark shadow">
+  <div className="navbar text-dark shadow  ">
     <div className="navbar-start">
       <div className="dropdown ">
         <label tabIndex="0" className="btn btn-ghost lg:hidden">
@@ -27,7 +27,7 @@ const Header = () => {
        }
         </ul>
       </div>
-      <a className="btn btn-ghost normal-case text-xl mx-auto">EMON AHMED</a>
+      <a className="btn btn-ghost normal-case text-3xl ">EMON  <span className="text-neutral ml-1">  AHMED</span> </a>
     </div>
     <div className="navbar-center hidden lg:flex ">
       <ul className="menu menu-horizontal  p-0 ">

@@ -1,0 +1,24 @@
+.Skill-Card{
+    position: relative;
+    bottom: 0px;
+    transition: bottom 0.5s ease-in-out;
+    z-index:1;
+    
+}
+.Skill-Card::after{
+ 
+    background-color: #ff014f;
+    bottom:0 px;
+    transition: background-color bottom  0.5s ease-in-out;
+    position: absolute;
+    z-index:-1;
+    
+
+}
+.Skill-Card:hover::after {
+    opacity: 5;
+  }
+  .Skill-Card:hover {
+    background: #ff014f;
+    bottom: 10px;
+  }

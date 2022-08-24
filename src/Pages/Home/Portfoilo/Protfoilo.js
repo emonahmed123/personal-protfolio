@@ -3,15 +3,18 @@ import React from 'react';
 import bg from '../../../Images/portfoilo/my-bg2.png'
 import './Protfolio.css'
 import TypewriterComponent from 'typewriter-effect';
-import { Link } from 'react-router-dom';
+import { HashLink as Link } from "react-router-hash-link";
+
+
 const Protfoilo = () => {
- 
+
 
   
     return ( 
        
     <>
-     <div className="min-h-screen container ">
+ 
+     <div className=" container ">
       <div className=" shink-0  max-w-7xl mx-auto mt-16 flex flex-col-reverse lg:flex-row justify-between items-center">
         <div className="w-full lg:w-2/3">
         {/* <motion.div

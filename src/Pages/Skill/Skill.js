@@ -8,6 +8,7 @@ import css from '../../Images/Skillimgae/csslicon.png.png'
 import boot from '../../Images/Skillimgae/boostrap.png'
 import Tail from '../../Images/Skillimgae/tailwind.png'
 // import { motion } from 'framer-motion';
+import './Skill.css'
 const Skill = () => {
   const SKills = [
     {
@@ -77,16 +78,16 @@ const Skill = () => {
     //   transition={{ duration: 1, ease: "easeInOut" }}
     // // className='max-w-2xl'
     // >
-    <div className='mt-44'>
+    <div className='mt-44 md:mt-[-40rem] lg:mt-44'>
       <div className='mx-24 ' >
         {/* <h1 className='text-center text-3xl shadow-xl bg-yellow-400 rounded'>SKILL</h1> */}
         <div class="flex flex-col w-full border-opacity-50">
 
-          <div class="text-3xl  text-center font-bold">MY <span className=' text-neutral'> SKILL</span> </div>
+          <div class="text-3xl pb-5 text-center font-bold">MY <span className=' text-neutral'> SKILL</span> </div>
 
         </div>
       </div>
-      <div className=' grid sm:grid-col-1 md:grid-cols-2 lg:grid-cols-4 px-44 gap-3 pt-4' >
+      <div className=' grid grid-col-1 md:grid-cols-2  mx-24 lg:grid-cols-4 lg:mx-44 gap-5 pt-4' >
         {
           SKills.map(skill => <div skill={skill} key={skill.id} >
             {/* <motion.div
@@ -94,7 +95,7 @@ const Skill = () => {
                 whileTap={{ scale: 1.05 }}
               > */}
 
-            <div class=" box_shodow card w-44 h-48 bg-secondary shadow-xl text-black">
+            <div class=" Skill-Card box_shodow card w-44 md:w-full h-48 bg-secondary shadow-xl text-black">
               <img className='w-24' src={skill.img} alt="" />
               <div class="card-body">
                 <h2 class="card-title">{skill.name}</h2>
