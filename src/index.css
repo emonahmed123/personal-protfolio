@@ -9,8 +9,10 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; */
   font-family: 'Poppins', sans-serif;
+  overflow: -moz-scrollbars-none; 
+  background-color:#ecf0f3;
 }
-
+body::-webkit-scrollbar { width: 0 !important }
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;

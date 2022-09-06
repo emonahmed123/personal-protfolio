@@ -4,7 +4,8 @@ const Postion = () => {
     return (
         <div className='relative '>
              <div class="fixed  bottom-10 left-0 right-0">
-    <p  onClick={()=>{scroll.scrollToTop()}} className='text-right cursor-pointer '><i className="title-icon  text-neutral ml-2 fa-solid fa-arrow-turn-up"></i>Top</p>
+    <p  onClick={()=>{scroll.scrollToTop()}} className='text-right cursor-pointer '>     <i className="fa-solid fa-arrow-turn-up text-black text-xl "></i></p>
+
   </div>
 
         </div>

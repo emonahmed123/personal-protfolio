@@ -19,14 +19,14 @@ const Project = ({ project }) => {
  
     {/* //  </motion.div> */}
 
-    <div className="portfolio-card text-accent hover:text-white" >
-      <div className="text-left">
-        <div className="image-content w-full rounded-xl overflow-hidden">
-          <img src={project.img} alt="" />
+    <div className="portfolio-card   text-accent hover:text-white" >
+      <div className="text-left ">
+        <div className="image-content rounded-xl h- ">
+          <img  src={project.img} alt="" />
         </div>
         <div>
          
-          <h2 className="project-title  font-semibold text-xl my-4">
+          <h2 className="project-title  font-semibold  text-sm lg:text-xl my-4">
             {project.name}
             <i className="title-icon text-secondary ml-2 fa-solid fa-arrow-turn-up"></i>
           </h2>

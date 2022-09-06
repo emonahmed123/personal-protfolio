@@ -13,14 +13,14 @@ const Skill = () => {
   const SKills = [
     {
       id: 1,
-      name: "Html",
+      name: "HTML",
       img: html,
 
 
     },
     {
       id: 2,
-      name: "Css",
+      name: "CSS",
       img: css,
 
 
@@ -78,12 +78,12 @@ const Skill = () => {
     //   transition={{ duration: 1, ease: "easeInOut" }}
     // // className='max-w-2xl'
     // >
-    <div className='mt-44 md:mt-[-40rem] lg:mt-44'>
+    <div className='mt-44 md:mt-[7rem] lg:mt-32'>
       <div className='mx-24 ' >
         {/* <h1 className='text-center text-3xl shadow-xl bg-yellow-400 rounded'>SKILL</h1> */}
         <div class="flex flex-col w-full border-opacity-50">
 
-          <div class="text-3xl pb-5 text-center font-bold">MY <span className=' text-neutral'> SKILL</span> </div>
+          <div class="text-3xl pb-5 text-center font-bold">MY <span className=' text-neutral'>SKILL</span> </div>
 
         </div>
       </div>
@@ -95,10 +95,10 @@ const Skill = () => {
                 whileTap={{ scale: 1.05 }}
               > */}
 
-            <div class=" Skill-Card box_shodow card w-44 md:w-full h-48 bg-secondary shadow-xl text-black">
-              <img className='w-24' src={skill.img} alt="" />
+            <div class=" Skill-Card box_shodow card w-44 md:w-full h-48 bg-secondary mx-auto shadow-xl text-black">
+              <img className='w-24 mx-auto mt-2' src={skill.img} alt="" />
               <div class="card-body">
-                <h2 class="card-title">{skill.name}</h2>
+                <h2 class=" font-bold text-center text-xl">{skill.name}</h2>
                 <div class="card-actions justify-end">
                 </div>
               </div>

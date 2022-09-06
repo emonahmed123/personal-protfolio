@@ -8,7 +8,7 @@ import best from '../../Images/New folder/pandaEco.png'
 const ProjectsDeatil = () => {
   ;
   const { id } = useParams();
-  const [projects, setProject] = useState({});
+  const [projects, setProject] = useState([]);
   const data = [{
     id: 1,
     name: " Car-parts-maunfactureing",
@@ -19,7 +19,7 @@ const ProjectsDeatil = () => {
     live: "https://car-parts-manufacturer-8d75b.web.app/",
     server: "https://github.com/emonahmed123/car-manufacture-server-side",
     client: "https://github.com/emonahmed123/car-manufactureing-client-side",
-    Tecnologe: ["Reactjs", "ReactRouter", "Tailwind", "CSS", "DaisyUI", "Firebase", "Firebase-Authentication hooks", "React hookform", "React-toasty", "React-Query", "MongoDB", "NodeJs", "ExpressJs", "Cors", "Dotenv", "Jsonwebtoken"],
+    Tecnologe: "Reactjs ReactRouter Tailwind CSS DaisyUI Firebase Firebase-Authentication hooks React hookform React-toasty React-Query MongoDB NodeJs ExpressJs Cors Dotenv Jsonwebtoken"
   },
   {
     id: 2,
@@ -31,7 +31,7 @@ const ProjectsDeatil = () => {
     live: "https://warehouse-82822.firebaseapp.com/",
     server: "https://github.com/emonahmed123/wharehouse-mangement-sever",
     clinet: "https://github.com/emonahmed123/wharehouse-mangement-client",
-    Tecnologe: ["Reactjs", "ReactRouter", "Tailwind", " CSS", "DaisyUI", "Firebase", " Firebase-Authentication hooks", "React-hookform", "React-toasty", "React-Query", "MongoDB NodeJs", "ExpressJs", "Cors", "Dotenv", "Jsonwebtoken."]
+    Tecnologe: "Reactjs ReactRouter Tailwind CSS DaisyUI Firebase Firebase-Authentication hooks React-hookform React-toasty React-Query MongoDB NodeJs ExpressJs CorsDotenv Jsonwebtoken."
 
   }, {
     id: 3,
@@ -42,7 +42,7 @@ const ProjectsDeatil = () => {
     more: "This site is a Wedding photographer portfolio and fully responseve.Any user can hire different types of photography services from here.and user can sing up sing in here",
     live: "https://photographer-436e3.web.app/ ",
     clinet: "https://github.com/emonahmed123/-independent-service-provider",
-    Tecnologe: ["React js", "React-router", "React", "Bootstrap", " Firebase Authention",]
+    Tecnologe: "React js React-router ReactBootstrap Firebase Authention"
 
   },
   {
@@ -54,7 +54,7 @@ const ProjectsDeatil = () => {
     more: "This is simple website build in react js.user see laptop home page and customer reivew and go dashboard see chart  ",
     live: "https://bestlaptop.netlify.app/",
     clinet: "https://github.com/emonahmed123/Best-Laptop",
-    Tecnologe: ["React js", "React-router", "React-Chart", "Bootstrap"]
+    Tecnologe: "React js React-router React-Chart Bootstrap"
   },
   {
     id: 5,
@@ -65,7 +65,7 @@ const ProjectsDeatil = () => {
     more: "This site is a Wedding photographer portfolio and fully responseve.Any user can hire different types of photography services from here.and user can sing up sing in here",
     live: "https://panda-emon.netlify.app/ ",
     clinet: "https://github.com/emonahmed123/Panda-bootstrap",
-    Tecnologe: ["Html", "css", "Bootstrap"]
+    Tecnologe: "Html css Bootstrap"
   }
   ]
 
@@ -93,10 +93,10 @@ const ProjectsDeatil = () => {
 
 
   return (
-    <div className="mx-5 mt-12 mb-64">
+    <div className="mx-5 mt-12 mb-64 ">
 
-      <div className="inside-detail flex flex-col lg:flex-row justify-center items-start gap-8 lg:h-[60vh] text-left mb-6">
-        <div className="image-detail w-full h-80 lg:w-1/2 lg:h-full rounded-xl overflow-hidden">
+      <div className="inside-detail flex flex-col lg:flex-row justify-center items-start gap-8 lg:h-[100vh] text-left mb-6">
+        <div className="   image-detail w-full h-80 lg:w-1/2 lg:h-full rounded-xl overflow-hidden">
           <img src={projects.Image} alt="" />
         </div>
         <div className="w-full lg:w-1/2 flex flex-col h-full justify-center">
@@ -115,12 +115,15 @@ const ProjectsDeatil = () => {
             </div>
             <div className="my-5">
               <h3 className=" text-secondary">Technology used</h3>
-              <div className="flex flex-wrap gap-4">
-                {/* {projects.Tecnologe.map(tecnologe => ( 
-                   <span  className="text-accent hover:none btn">
-                    {tecnologe}
-                  </span> 
-                ))}  */}
+              <div className="flex flex-wrap gap-4 text-black tracking-tighter">
+                {/* {
+                projects.Tecnologe?.map(de =><div>  
+                   <p  className="text-accent hover:none btn">
+                    {tecnologe.tecnologe}
+                  </p> 
+                 </div>
+               )}   */}<p className="tracking-tighter">  {projects.Tecnologe}</p>
+             
               </div>
             </div>
           </div>

@@ -1,10 +1,7 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 
 .App {
-  background-color:#ecf0f3;
  
+  
 }
 
 * {
@@ -15,10 +12,7 @@
 html {
   scroll-behavior: smooth;
 }
-body {
-  font-family: "Poppins", sans-serif;
-  background-color: #ecf0f3;
-}
+
 .container {
   max-width: 95%;
   margin: auto;
@@ -44,7 +38,7 @@ button {
 }
 .btn_shadow {
   background: linear-gradient(145deg, #e2e8ec, #ffffff);
-  box-shadow: 4px 4px 8px #cbcbcb, -4px -4px 8px #ffffff;
+  box-shadow: 4px 4px 8px #cbcbcb, -4px -4px 8px #c1c1c1;
 }
 .btn_shadow:hover {
   background: #ff014f;
@@ -53,7 +47,7 @@ button {
 }
 .box_shodow {
   background: linear-gradient(145deg, #e2e8ec, #ffffff);
-  box-shadow: 4px 4px 8px #cbcbcb, -4px -4px 8px #ffffff;
+  box-shadow: 4px 4px 8px #cbcbcb, -4px -4px 8px #989898;
   border-radius: 10px;
 }
 .row,
@@ -90,12 +84,5 @@ p {
   text-align: center;
 }
 
-/* //   mytheme: {
-  //     primary: "#212428",
-  //     secondary: "#0097e6",
-  //     accent: "#c4cfde",
-  //     neutral: "#3d4451",
-  //     "base-100": "#ffffff",
-  // } */
 
 

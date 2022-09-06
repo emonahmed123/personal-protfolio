@@ -1,5 +1,5 @@
 
-.Imla{
+/* .Imla{
     margin: auto;
     cursor: n-resize;
 }
@@ -9,11 +9,7 @@
     object-fit: cover;
     object-position: top;
     transition: 5s all ease;
-}
-
-
-
-
+} */
 
 
 .portfolio-card {
@@ -27,7 +23,7 @@
     z-index: 1;
     border-radius: 20px;
     background: linear-gradient(145deg, #e2e8ec, #ffffff);
-    box-shadow: 4px 4px 8px #cbcbcb, -4px -4px 8px #ffffff;
+    box-shadow: 4px 4px 8px #cbcbcb, -4px -4px 8px #cac9c9;
   }
   .portfolio-card::after {
     content: "";
@@ -37,7 +33,7 @@
     top: 0px;
     right: 0px;
     bottom: 0px;
-    background: #ff014f;
+    background: #ff014df9;
     color: white;
     border-radius: 20px;
     opacity: 0;
@@ -80,6 +76,15 @@
   
   .portfolio-card:hover .title-icon {
     transform: scale(1);
+  }
+   .portfolio-card{
+  
+    transition:0.5s ease-in-out ;
+    transform: translateY(10px);
+   }
+  .portfolio-card:hover  {
+    transition:0.5s ease-in-out ;
+    transform: translateY(-10px);
   }
   
   .button-content {

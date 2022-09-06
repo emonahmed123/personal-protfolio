@@ -27,13 +27,13 @@ const Protfoilo = () => {
         
             <p
            
-              className="uppercase text-left text-xs lg:text-sm font-blod"
+              className="uppercase text-black text-left text-xs lg:text-sm font-blod"
             >
               Welcome To My World
             </p>
             <h1
               
-              className="uppercase font-semibold my-7 text-left text-3xl lg:text-6xl leading-snug"
+              className="uppercase font-semibold my-7 text-left text-black text-3xl lg:text-6xl leading-snug"
             >
               Hi, I'm <span className="text-neutral">EMON AHMED</span>
               <br />

@@ -30,9 +30,9 @@ const Input = () => {
      //>
          <section className='Contact' id='contact'>
         <div className='container top' >
-          <div className='heading text-center'>
-            <h4>CONTACT</h4>
-            <h1>Contact <span className=' text-neutral'>With Me</span> </h1>
+          <div className='heading text-center font-bold'>
+            <h2 className='text-3xl'>CONTACT</h2>
+            <h1  >Contact <span className=' text-neutral'>With Me</span> </h1>
           </div>
 
           <div className='content d_flex'>

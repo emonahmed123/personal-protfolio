@@ -72,12 +72,12 @@ const Services = () => {
 // >
     <div id="services" className="max-w-7xl mx-auto mt-32 ">
       <div>
-        <p className="text-xs lg:text-sm text-black uppercase">Services</p>
-        <p className=" font-bold text-3xl lg:text-5xl mb-10">
-          What I Do{" "}
+        <p className="text-3xl text-black font-bold uppercase text-center">Ser<span className="text-neutral ">vices</span></p>
+        <p className=" font-bold  text-black  text-5xl mb-10 pt-5 text-center">
+          What  I  Do{" "}
         </p>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mx-2">
         {serviceIProvide.map((service) => (
           <ServiceCard key={service.id} service={service} />
         ))}
