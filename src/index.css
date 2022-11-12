@@ -10,7 +10,7 @@ body {
   -moz-osx-font-smoothing: grayscale; */
   font-family: 'Poppins', sans-serif;
   overflow: -moz-scrollbars-none; 
-  background-color:#ecf0f3;
+   background-color:#00040f    ;
 }
 body::-webkit-scrollbar { width: 0 !important }
 code {

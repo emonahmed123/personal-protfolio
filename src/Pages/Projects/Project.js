@@ -21,21 +21,13 @@ const Project = ({ project }) => {
 
     <div className="portfolio-card   text-accent hover:text-white" >
       <div className="text-left ">
-        <div className="image-content rounded-xl h- ">
+        <div className="image-content rounded-xl  ">
           <img  src={project.img} alt="" />
         </div>
-        <div>
-         
-          <h2 className="project-title  font-semibold  text-sm lg:text-xl my-4">
-            {project.name}
-            <i className="title-icon text-secondary ml-2 fa-solid fa-arrow-turn-up"></i>
-          </h2>
-          <p className=''>{project.dis}</p>
-           
-        </div>
-        <div className="button-content flex justify-between mt-5">
+        
+        <div className="button-content flex text-white justify-between mt-5">
            <button
-            className="project-button text-[10px] lg:text-[12px]"
+            className="project-button text-white  text-[10px] lg:text-[12px]"
             onClick={() => handleNavigate(id)} 
           >
             <i className="text-sm text-secondary mr-2 fa-solid fa-circle-dot"></i>

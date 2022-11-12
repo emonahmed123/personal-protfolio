@@ -8,7 +8,6 @@ import ProjectsDeatil from './Pages/Projects/ProjectsDeatil';
 import Blog from './Pages/Blog/Blog';
 import ClimbingBoxLoader from "react-spinners/ClimbingBoxLoader";
 
-
 function App() {
   
  const[loading,setLoading]=useState(false);
@@ -18,13 +17,13 @@ function App() {
       setTimeout(()=>{
           setLoading(false)
 
-      },8000)  
+      },1000)  
 
     },[])
  
- 
+  
   return (
-    <div className=' App'>
+    <div >
 
        {
         loading ? (<ClimbingBoxLoader

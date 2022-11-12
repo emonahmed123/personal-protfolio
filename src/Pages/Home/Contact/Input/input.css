@@ -26,7 +26,13 @@
   }
  
   .Contact input {
+    color: azure;
     margin-top: 10px;
+    background-color: black;
+  } 
+  .Contact textarea {
+    color: azure;
+    background-color: black;
   } 
   .Contact .right button {
     width: 100%;

@@ -72,8 +72,8 @@ const Services = () => {
 // >
     <div id="services" className="max-w-7xl mx-auto mt-32 ">
       <div>
-        <p className="text-3xl text-black font-bold uppercase text-center">Ser<span className="text-neutral ">vices</span></p>
-        <p className=" font-bold  text-black  text-5xl mb-10 pt-5 text-center">
+        <p className="text-3xl  font-bold uppercase text-center">Ser<span className="text-neutral ">vices</span></p>
+        <p className=" font-bold   text-5xl mb-10 pt-5 text-center">
           What  I  Do{" "}
         </p>
       </div>

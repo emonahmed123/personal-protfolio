@@ -1,12 +1,15 @@
 import React from 'react';
-import javascripticon from '../../Images/Skillimgae/jsicon.png'
-import reactscripticon from '../../Images/Skillimgae/reactlicon1.png'
-import Mongodbicon from '../../Images/Skillimgae/mongodbicon.png'
-import nodejsicon from '../../Images/Skillimgae/Nodelicon.png'
-import html from '../../Images/Skillimgae/htmlicon.png.png'
-import css from '../../Images/Skillimgae/csslicon.png.png'
-import boot from '../../Images/Skillimgae/boostrap.png'
-import Tail from '../../Images/Skillimgae/tailwind.png'
+import javascripticon from '../../Images/Skillimgae/javascript.png'
+import reactscripticon from '../../Images/Skillimgae/react.png'
+import Mongodbicon from '../../Images/Skillimgae/mongodb.png'
+import nodejsicon from '../../Images/Skillimgae/node.png'
+import html from '../../Images/Skillimgae/html.png'
+import css from '../../Images/Skillimgae/css.png'
+ import fire from '../../Images/Skillimgae/firebase.png'
+ import Git from '../../Images/Skillimgae/git.png'
+ import figma from '../../Images/Skillimgae/figma.png'
+ import redux from '../../Images/Skillimgae/redux.png'
+ import tailwind from '../../Images/Skillimgae/tailwind.png'
 // import { motion } from 'framer-motion';
 import './Skill.css'
 const Skill = () => {
@@ -25,20 +28,16 @@ const Skill = () => {
 
 
     },
-    {
-      id: 3,
-      name: "Bootstrap",
-      img: boot,
-
-
-    },
-    {
-      id: 4,
-      name: "Tailwind",
-      img: Tail,
-
-
-    },
+  {
+    id:3,
+    name:"Git",
+    img:Git
+  },
+  {
+    id:4,
+    name:"Firebase",
+    img:fire
+  },
     {
       id: 5,
       name: "JavaScript",
@@ -63,6 +62,24 @@ const Skill = () => {
       id: 8,
       name: "Nodejs",
       img: nodejsicon,
+
+    },
+    {
+      id: 9,
+      name: "Figma",
+      img: figma,
+
+    },
+    {
+      id: 10,
+      name: "Redux",
+      img: redux,
+
+    },
+    {
+      id: 11,
+      name: "Taliwind",
+      img: tailwind,
 
     }
 
@@ -95,8 +112,8 @@ const Skill = () => {
                 whileTap={{ scale: 1.05 }}
               > */}
 
-            <div class=" Skill-Card box_shodow card w-44 md:w-full h-48 bg-secondary mx-auto shadow-xl text-black">
-              <img className='w-24 mx-auto mt-2' src={skill.img} alt="" />
+            <div class=" Skill-Card box_shodow  card w-44 md:w-full h-48  mx-auto shadow-xl ">
+              <img className='w-24 mx-auto mt-2  ' src={skill.img} alt="" />
               <div class="card-body">
                 <h2 class=" font-bold text-center text-xl">{skill.name}</h2>
                 <div class="card-actions justify-end">

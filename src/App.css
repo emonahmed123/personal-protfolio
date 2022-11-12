@@ -1,6 +1,5 @@
 
 .App {
- 
   
 }
 
@@ -33,21 +32,21 @@ button {
   border-radius: 6px;
   transition: 0.3s all ease;
   cursor: pointer;
-  color: #000;
+  color: white;
   transition: 0.5s;
 }
 .btn_shadow {
-  background: linear-gradient(145deg, #e2e8ec, #ffffff);
-  box-shadow: 4px 4px 8px #cbcbcb, -4px -4px 8px #c1c1c1;
+  background:#00040f ;
+  box-shadow: 4px 4px 8px #100e0e, -4px -4px 8px #0d0c0c;
 }
 .btn_shadow:hover {
-  background: #ff014f;
-  color: white;
+  background: #00040f;
+  
   transform: translateY(-10px);
 }
 .box_shodow {
-  background: linear-gradient(145deg, #e2e8ec, #ffffff);
-  box-shadow: 4px 4px 8px #cbcbcb, -4px -4px 8px #989898;
+  background:#00040f;
+  box-shadow: 4px 4px 8px #100e0e, -4px -4px 8px #0d0c0c;
   border-radius: 10px;
 }
 .row,

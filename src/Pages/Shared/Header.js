@@ -1,7 +1,7 @@
 import React from "react";
 import { HashLink as Link } from "react-router-hash-link";
 // import {Link} from "react-scroll";
-
+import Toggole from "../Home/Toggole/Toggole";
 const Header = () => {
     
    
@@ -11,10 +11,12 @@ const Header = () => {
           <li><Link className='font-bold  ' smooth to ='/home#contact'>CONTACT</Link></li>
           <li><Link className='font-bold  ' smooth to='/home#about' >ABOUT</Link></li>
           <li><Link className='font-bold  ' smooth to='/bolg'> BLOG </Link></li> 
+          <li><Toggole/> </li> 
+                  
      </> 
       return (
         <>
-  <div className="navbar text-dark shadow   ">
+  <div className="navbar text-white shadow   ">
     <div className="navbar-start ">
       <div className="dropdown ">
         <label tabIndex="0" className="btn btn-ghost lg:hidden">

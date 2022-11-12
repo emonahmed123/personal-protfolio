@@ -14,7 +14,7 @@ const Protfoilo = () => {
        
     <>
  
-     <div className=" container ">
+     <div className="  text-white ">
       <div className=" shink-0  max-w-7xl mx-auto mt-16 flex flex-col-reverse lg:flex-row justify-between items-center">
         <div className="w-full lg:w-2/3">
         {/* <motion.div
@@ -27,13 +27,13 @@ const Protfoilo = () => {
         
             <p
            
-              className="uppercase text-black text-left text-xs lg:text-sm font-blod"
+              className="uppercase text-white text-left text-xs lg:text-sm font-blod"
             >
               Welcome To My World
             </p>
             <h1
               
-              className="uppercase font-semibold my-7 text-left text-black text-3xl lg:text-6xl leading-snug"
+              className="uppercase font-semibold my-7 text-left   text-3xl lg:text-6xl leading-snug"
             >
               Hi, I'm <span className="text-neutral">EMON AHMED</span>
               <br />
@@ -52,7 +52,7 @@ const Protfoilo = () => {
             </h1>
             <p
              
-              className="text-left text-black w-full lg:w-[60ch]"
+              className="text-left  w-full lg:w-[60ch]"
             >
               Hi I am a Junior developer And I can build your website as you
               want.
@@ -76,7 +76,7 @@ const Protfoilo = () => {
               </a>
             </div>
 
-            <div className='btn_shadow' >
+            <div className='btn_shadow ' >
               <Link
                 smooth
                 className="anchor-button py-[0.85rem] px-4 lg:px-12"

@@ -5,6 +5,7 @@ import car from '../../Images/New folder/Carmu.png'
 import bike from '../../Images/New folder/Bikeware.png'
 import photo from '../../Images/New folder/Photograp.png'
 import best from '../../Images/New folder/pandaEco.png'
+import ract from '../../Images/New folder/React.png'
 const ProjectsDeatil = () => {
   ;
   const { id } = useParams();
@@ -66,6 +67,17 @@ const ProjectsDeatil = () => {
     live: "https://panda-emon.netlify.app/ ",
     clinet: "https://github.com/emonahmed123/Panda-bootstrap",
     Tecnologe: "Html css Bootstrap"
+  },
+  {
+    id: 6,
+    name: "React.",
+    img: ["https://i.ibb.co/f8w13ng", "htibb.co/swrC3xB/Screenshot-2022-06-10-081559.png", "https://i.ibb.co/mDRF0XS/Screenshot-2022-06-10-081714.png",],
+    Image:ract,
+    dis: "This is  demo React App  fully responseve",
+    more: "This is  demo React App .user view all products",
+    live: "https://panda-emon.netlify.app/ ",
+    clinet: "https://github.com/emonahmed123/Panda-bootstrap",
+    Tecnologe: "Reactjs tailwindcss  "
   }
   ]
 
@@ -95,11 +107,11 @@ const ProjectsDeatil = () => {
   return (
     <div className="mx-5 mt-12 mb-64 ">
 
-      <div className="inside-detail flex flex-col lg:flex-row justify-center items-start gap-8 lg:h-[100vh] text-left mb-6">
+      <div className="inside-detail flex flex-col lg:flex-row justify-center items-start gap-8 lg:h-[500px] text-left mb-6">
         <div className="   image-detail w-full h-80 lg:w-1/2 lg:h-full rounded-xl overflow-hidden">
           <img src={projects.Image} alt="" />
         </div>
-        <div className="w-full lg:w-1/2 flex flex-col h-full justify-center">
+        <div className="w-full lg:w-1/2 flex flex-col h-96 justify-center">
           <div>
 
             <h2 className="project-title font-bold text-xl my-4">
@@ -108,7 +120,7 @@ const ProjectsDeatil = () => {
             <div className="my-5">
               <h3 className=" text-secondary">Project Overview</h3>
 
-              <p className="text-black">
+              <p className="">
                 {projects.more}
               </p>
 

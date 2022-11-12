@@ -9,8 +9,8 @@
     align-items: center;
     z-index: 1;
     border-radius: 12px;
-    background: linear-gradient(145deg, #e2e8ec, #ffffff);
-    box-shadow: 4px 4px 8px #cbcbcb, -4px -4px 8px #c7c7c7;
+    background:#00040f ;
+    box-shadow: 4px 4px 8px #080808, -4px -4px 8px #121212;
     transition: bottom 0.3s ease-in-out;
   }
   .service-card::after {
@@ -21,7 +21,7 @@
     top: 0px;
     right: 0px;
     bottom: 0px;
-    background: #ff014f;
+    background: #00040f ;
     border-radius: 12px;
     opacity: 0;
     transition: all 0.3s ease-in-out;

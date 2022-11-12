@@ -12,9 +12,10 @@
     position: relative;
     padding: 2rem;
     z-index: 1;
-    background: linear-gradient(145deg, #e2e8ec, #ffffff);
+    background: #00040f;
     box-shadow: 4px 4px 8px #cbcbcb, -4px -4px 8px #ffffff;
     border-radius: 20px;
+    color: white;
   }
   .inside-detail::after {
     content: "";
@@ -24,7 +25,7 @@
     top: 0px;
     right: 0px;
     bottom: 0px;
-    background: #ff014f;
+    background:  #00040f;
     color: white;
     border-radius: 20px;
     opacity: 0;

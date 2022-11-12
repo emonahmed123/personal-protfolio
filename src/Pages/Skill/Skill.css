@@ -7,7 +7,7 @@
 }
 .Skill-Card::after{
  
-    background-color: #ff014f;
+    background-color: rgba(9, 151, 124, 0.1);
     bottom:0 px;
     transition: background-color bottom  0.5s ease-in-out;
     position: absolute;
@@ -19,6 +19,6 @@
     opacity: 5;
   }
   .Skill-Card:hover {
-    background: #ff014f;
+    background:rgba(9, 151, 124, 0.1);
     bottom: 10px;
   }
