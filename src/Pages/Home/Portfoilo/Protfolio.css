@@ -1,8 +1,8 @@
 .image {
     border-radius: 10px;
-    background:#00040f;
-    box-shadow: 4px 4px 8px #000000, -4px -4px 8px #0d0d0d;
     
+    box-shadow: 4px 4px 8px #000000, -4px -4px 8px #0d0d0d;
+    background-color:#00040f;
   }
   
 
